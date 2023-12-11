@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!---------------------DONNEES INVISIBLES DE LA PAGE--------------------------->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITRE DE LA PAGE -->
+    <title>Cours HTML de zéro</title>
+    <!-- LOGO DE L'ONGLET -->
+    <link rel="shortcut icon" href="./img/html5-logo.png" />
+  </head>
+
+  <!-- ---------------------------BODY--------------------------------------- -->
+  <body>
+    <!-- Menu de navigation     -->
+    <nav>
+      <!-- UL = Unordered List -->
+      <ul>
+        <li>Accueil</li>
+        <li>Boutique</li>
+        <li><a href="#form">Formulaire</a></li>
+      </ul>
+    </nav>
+    <!-- EN TETE -->
+    <header>
+      <!-- Un seul H1 par page -->
+      <h1>Ceci est le titre principal</h1>
+      <p>
+        Texte classique. <em>Texte en italique.</em>
+        <strong>Texte en gras.</strong>
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis illum
+        magni, quis inventore aut necessitatibus pariatur id distinctio illo.
+        Repellat voluptate, consequuntur fuga ullam deleniti quos libero sunt
+        architecto et?
+      </p>
+    </header>
+    <!-- PARTIE PRINCIPALE -->
+    <main>
+      <section>
+        <h2>Ordered List</h2>
+        <ol>
+          <li>Ceci est une</li>
+          <li>liste dans</li>
+          <li>l'ordre</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Image en HTML</h3>
+        <img src="./img/image.jpg" height="200" alt="image-section" />
+        <!-- L'ALT de l'image est pour l'accessibilité -->
+
+        <div>
+          <h4>Tableaux</h4>
+          <table
+            border="4"
+            cellpadding="10"
+            cellspacing="4"
+            style="text-align: center"
+          >
+            <!-- thead est pour l'en-tête du tableau     -->
+            <thead>
+              <tr>
+                <th>Col 1</th>
+                <th>Col 2</th>
+                <th>Col 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+              </tr>
+              <tr>
+                <td colspan="2">Cell 4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h5><i>&#10084;</i> Les liens</h5>
+          <!-- a = anchor   -->
+          <a href="https://htmlcheatsheet.com" target="_blank"
+            >HTML Cheat Sheet</a
+          >
+        </div>
+        <div>
+          <h6><span>&#9835;</span> Vidéos</h6>
+          <video src="./img/video.mp4" height="200" autoplay muted loop></video>
+        </div>
+      </section>
+      <section>
+        <h2 id="form">Les Formulaires</h2>
+        <form action="">
+          <!-- "for" et "id" permettent de lier le label et l'input  -->
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="Entrez votre nom" />
+
+          <br />
+
+          <label for="age">Entrez votre age</label>
+          <input type="number" id="age" value="18" />
+
+          <br />
+
+          <!-- Input de type select -->
+          <label for="gender">Genre</label>
+          <select id="gender">
+            <option value="Homme">Homme</option>
+            <option selected="selected" value="Femme">Femme</option>
+            <option value="Autre">Autre</option>
+          </select>
+
+          <!-- Input de type radio -->
+          <div>
+            <input type="radio" name="type" id="human" checked />
+            <label for="human">Humain</label>
+            <input type="radio" name="type" id="dog" />
+            <label for="dog">Chien</label>
+            <input type="radio" name="type" id="cat" />
+            <label for="cat">Chat</label>
+          </div>
+
+          <textarea placeholder="Votre message" cols="20" rows="5"> </textarea>
+
+          <br />
+
+          <!-- Input de type checkbox -->
+          <input type="checkbox" id="cgv" />
+          <label for="cgv">Accepter les conditions générales de vente</label>
+
+          <br />
+
+          <input
+            type="submit"
+            value="Ceci est un bouton qui permet de valider"
+          />
+        </form>
+        <button>Ceci est un bouton</button>
+      </section>
+    </main>
+
+    <!-- Mail et envoi de fichiers -->
+    <footer>
+      <a href="mailto:jenniferhauck2017@gmail.com">Contactez-moi</a>
+      <br />
+      <a href="./notice.txt" download="Notice">Télécharger la notice</a>
+      <br />
+      <a href="./img/image.jpg" download="Image">Télécharger l'image</a>
+    </footer>
+  </body>
+</html>
