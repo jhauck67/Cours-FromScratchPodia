@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Caveat&family=Inter:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #1d1d1d;
+  font-family: Inter, sans-serif;
+  color: white;
+  max-width: 100vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 20px;
+}
+
+nav ul li {
+  font-size: 0.8rem;
+  list-style-type: none;
+}
+
+.header {
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  width: 50%;
+}
+
+.header-left-container {
+  padding-right: 100px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+.header-left-container h3 {
+  font-size: 1.3rem;
+  color: #474dff;
+  padding: 5px 20px;
+}
+
+.header-left-container p {
+  font-size: 0.5rem;
+  padding: 0 20px;
+}
+
+.header-right {
+  width: 50%;
+  padding: 20px;
+}
+
+#modem {
+  width: 100%;
+  align-content: center;
+}
+
+.infos {
+  background-color: black;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infos-left {
+  width: 25%;
+  padding: 10px;
+  display: block;
+}
+
+.infos-left h3,
+.infos-right h3 {
+  font-size: 0.9rem;
+  padding: 0 0 10px 0;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-container button {
+  margin: 2px;
+  background-color: #474dff;
+  color: white;
+  font-size: 0.7rem;
+  padding: 5px;
+  border-radius: 10px;
+  width: 120px;
+}
+
+.infos-right {
+  width: 75%;
+  padding: 10px;
+  display: block;
+}
+
+.investors {
+  align-items: center;
+  height: 85px;
+}
+
+.img-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-container img {
+  height: 30px;
+}
