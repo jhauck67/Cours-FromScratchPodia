@@ -41,6 +41,7 @@
     "header header header"
     "side main main"
     "side footer footer";
+  gap: 10px;
 }
 .enfant1 {
   grid-area: header;
