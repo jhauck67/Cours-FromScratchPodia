@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 5px;
+  font-family: Inter;
+}
+
+body {
+  background-color: #1d1d1d;
+  color: whitesmoke;
+}
+
+li {
+  list-style-type: none;
+  font-size: 0.8rem;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+
+/* Comment aligner différemment les listes ? */
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.header-left-container h3 {
+  color: #474dff;
+}
+
+.header-right img {
+  width: 95%;
+}
+
+.infos {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  background-color: black;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+.infos h3 {
+  font-size: 1rem;
+}
+
+.infos-left {
+  display: grid;
+  grid-template-rows: 25% 75%;
+  align-items: center;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  max-width: 140px;
+}
+
+button {
+  background-color: #474dff;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+.infos-right {
+  display: grid;
+  grid-template-rows: 25% 75%;
+  align-items: center;
+  height: 100%;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+}
+
+.img-container img {
+  height: 40px;
+}
