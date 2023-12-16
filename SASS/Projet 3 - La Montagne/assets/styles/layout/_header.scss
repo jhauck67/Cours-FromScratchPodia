@@ -1,0 +1,29 @@
+header {
+  width: 100%;
+  height: 93vh;
+  @include centerChild;
+  text-align: center;
+
+  .header-container {
+    width: 90%;
+
+    h3 {
+      color: $ScriptW;
+      padding: 30px 0 50px 0;
+    }
+
+    #scroll {
+      color: $ScriptW;
+      border: 1px solid $ScriptW;
+      padding: 10px 12px;
+      border-radius: 150px;
+      transition: 0.3s;
+    }
+    #scroll:hover {
+      background-color: $BodyW;
+      color: $ScriptB;
+      transform: scale(1.2);
+      border: transparent;
+    }
+  }
+}

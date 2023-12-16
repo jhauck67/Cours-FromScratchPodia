@@ -1,1 +1,11 @@
 @import "./settings";
+@import "./layout/header";
+@import "./layout/navbar";
+
+// ******** HEADLINE ********
+.headline {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 500px;
+  background: white;
+}
