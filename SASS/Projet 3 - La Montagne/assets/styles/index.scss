@@ -2,6 +2,7 @@
 @import "./layout/header";
 @import "./layout/navbar";
 @import "./components/button";
+@import "./layout/form";
 
 // ******** HEADLINE ********
 .headline {
@@ -72,7 +73,7 @@
   background: white;
   display: flex;
   h4 {
-    width: 50%;
+    width: 55%;
     font-size: 1rem;
     color: $ScriptB;
     text-transform: uppercase;

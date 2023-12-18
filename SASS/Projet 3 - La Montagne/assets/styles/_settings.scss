@@ -32,13 +32,17 @@ body {
 h1,
 h2,
 #button,
-h4 {
+h4,
+label {
   font-family: "Inter", sans-serif;
   font-size: 2.5rem;
   text-transform: uppercase;
   color: $ScriptW;
 }
-h3 {
+h3,
+#adress,
+#phone,
+#email {
   font-family: "Merriweather", serif;
   font-size: 0.6rem;
   font-weight: 300;

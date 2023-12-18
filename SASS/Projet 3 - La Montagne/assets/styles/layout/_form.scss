@@ -1,0 +1,78 @@
+.form {
+  background: $BodyW;
+  min-height: 350px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 20px;
+  label {
+    text-transform: uppercase;
+    color: $ScriptB;
+    font-size: 0.6rem;
+    margin: 10px 0;
+  }
+  input,
+  textarea {
+    width: 80%;
+    margin: 10px 0;
+  }
+  input {
+    height: 30px;
+  }
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+}
+.form-left {
+  width: 50%;
+  display: block;
+  padding: 40px 20px;
+  box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.1098039216);
+  .button-container {
+    margin-top: 10px;
+  }
+  #button {
+    margin: 0;
+    text-align: center;
+    padding-top: 8px;
+  }
+}
+.form-right {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 40px 20px;
+  align-content: center;
+  align-items: center;
+  label,
+  #adress,
+  #phone,
+  #email,
+  #social {
+    padding-left: 25px;
+  }
+  #adress {
+    line-height: 20px;
+  }
+  a {
+    color: $ScriptB;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 0 10px 0 0;
+    padding: 4px 0;
+    text-align: center;
+    transition: 0.1s;
+  }
+  a:hover {
+    color: $ScriptW;
+    border: 1px solid white;
+    background: $ScriptB;
+  }
+  i {
+    padding: 5px 0px;
+    height: 26px;
+    width: 26px;
+  }
+}

@@ -16,14 +16,18 @@ body {
 h1,
 h2,
 #button,
-h4 {
+h4,
+label {
   font-family: "Inter", sans-serif;
   font-size: 2.5rem;
   text-transform: uppercase;
   color: #f2f3f3;
 }
 
-h3 {
+h3,
+#adress,
+#phone,
+#email {
   font-family: "Merriweather", serif;
   font-size: 0.6rem;
   font-weight: 300;
@@ -181,6 +185,94 @@ nav i:hover {
   border: 1px solid #f2f3f3;
 }
 
+.form {
+  background: #ffffff;
+  min-height: 350px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+}
+.form label {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 0.6rem;
+  margin: 10px 0;
+}
+.form input,
+.form textarea {
+  width: 80%;
+  margin: 10px 0;
+}
+.form input {
+  height: 30px;
+}
+.form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.form-left {
+  width: 50%;
+  display: block;
+  padding: 40px 20px;
+  -webkit-box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.1098039216);
+          box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.1098039216);
+}
+.form-left .button-container {
+  margin-top: 10px;
+}
+.form-left #button {
+  margin: 0;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.form-right {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 40px 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form-right label,
+.form-right #adress,
+.form-right #phone,
+.form-right #email,
+.form-right #social {
+  padding-left: 25px;
+}
+.form-right #adress {
+  line-height: 20px;
+}
+.form-right a {
+  color: #000000;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin: 0 10px 0 0;
+  padding: 4px 0;
+  text-align: center;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.form-right a:hover {
+  color: #f2f3f3;
+  border: 1px solid white;
+  background: #000000;
+}
+.form-right i {
+  padding: 5px 0px;
+  height: 26px;
+  width: 26px;
+}
+
 .headline {
   width: 90%;
   margin: 0 auto;
@@ -251,7 +343,7 @@ nav i:hover {
   display: flex;
 }
 .articles h4 {
-  width: 50%;
+  width: 55%;
   font-size: 1rem;
   color: #000000;
   text-transform: uppercase;
