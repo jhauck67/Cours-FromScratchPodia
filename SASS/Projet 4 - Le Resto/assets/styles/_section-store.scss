@@ -1,0 +1,48 @@
+section.store {
+  display: grid;
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .store-left-container {
+    margin: 15px;
+    border: 2px dotted $dore1;
+
+    h3 {
+      margin-top: 20px;
+    }
+    h4 {
+      margin: -15px 0 20px;
+    }
+    p {
+      padding: 20px 10px 25px;
+      font-size: 1rem;
+    }
+    #avatar {
+      border-radius: 150px;
+    }
+    #chef-name {
+      font-family: $medium;
+      margin: 5px 0 0;
+      padding: 0;
+    }
+    #chef-post {
+      text-transform: uppercase;
+      color: grey;
+      font-size: 0.8rem;
+      margin: 0px 0 20px;
+      padding: 0;
+    }
+  }
+  .store-right {
+    background: url(../img/store-01.jpg) center/cover;
+    height: 100%;
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}

@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resto, votre restaurant gastronomique</title>
+    <title>Resto, Votre Restaurant Gastronomique</title>
+    <meta
+      name="description"
+      content="Découvrez l'expérience gastronomique exceptionnelle chez Resto. Explorez notre menu exquis, ambiance raffinée, et laissez-vous séduire par une intégration web alliant esthétique et convivialité. Réservez votre table aujourd'hui."
+    />
     <link
       rel="shortcut icon"
       href="./assets/img/favicon.png"
@@ -13,200 +17,352 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
   </head>
   <body>
+    <!-- ******** NAVBAR ******** -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <p id="logo">Resto</p>
+      </div>
+      <div class="navbar-middle">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Reservations</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- ******** HEADER ******** -->
     <header>
-      <div class="navbar">
-        <div id="logo">
-          <span>Resto</span>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">reservations</a></li>
-            <li><a href="#section-menu">menu</a></li>
-            <li><a href="#">blog</a></li>
-            <li><a href="#">pages</a></li>
-            <li><a href="#section-store">shop</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
-        <div class="social">
-          <ul>
-            <li>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="title">
-        <div class="title-container">
-          <div class="subtitle">Welcome to</div>
-          <h1>The Resto</h1>
-          <img
-            src="./assets/img/ic-plate-big.png"
-            alt="ic-plate-big"
-            id="ic-plate-big"
-          />
-          <p>we serve only the freshest ingredients</p>
-        </div>
+      <div class="header-container">
+        <p id="subtitle">Welcome to</p>
+        <h1>The Resto</h1>
+        <img src="./assets/img/ic-plate-big.png" alt="icone couvert" />
+        <h2>We serve only the freshest ingredients !</h2>
       </div>
     </header>
     <!-- ******** STORE ******** -->
-    <section class="store" id="section-store">
+    <section class="store">
       <div class="store-left">
         <div class="store-left-container">
-          <div class="subtitle" id="subt">Discover</div>
-          <h2>our store</h2>
-          <img src="./assets/img/ic-plate.png" alt="ic-plate" id="ic-plate" />
+          <h3>Discover</h3>
+          <h4>Our store</h4>
+          <img src="./assets/img/ic-plate.png" alt="icone couverts" />
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Voluptates, maxime repellendus accusantium mollitia hic debitis
-            magni suscipit quo reprehenderit ullam odio ad provident facilis
-            blanditiis culpa sed. Molestias rerum enim corrupti sapiente esse
-            dolorum! Doloremque?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
+            illo, atque sed nisi harum ipsam similique ullam expedita? Eum dolor
+            nulla corrupti fuga corporis id consectetur, est nostrum ipsam
+            adipisci?
           </p>
           <img
+            id="avatar"
             src="./assets/img/avatar-01.jpg"
-            alt="avatar-01"
-            id="russel-stephens"
+            alt="avatar russell stephens"
+            width="60px"
           />
-          <div class="nom">Russel Stephens</div>
-          <div class="post">chef cook</div>
+
+          <p id="chef-name">Russell Stephens</p>
+          <p id="chef-post">chef cook</p>
         </div>
       </div>
       <div class="store-right"></div>
     </section>
     <!-- ******** MENU ******** -->
-    <section id="section-menu">
+    <section class="menu">
       <div class="menu-top">
-        <div class="menu-top-title">
-          <div class="subtitle" id="subt">Discover</div>
-          <img src="./assets/img/ic-plate-big.png" alt="ic-plate-big" />
-        </div>
-        <div class="menu-top-nav">
+        <div class="menu-top-container">
+          <h3>Discover</h3>
+          <img src="./assets/img/ic-plate.png" alt="icone couverts" />
           <ul>
             <li><a href="#">Breakfast</a></li>
             <li><a href="#">Lunch</a></li>
             <li><a href="#">Dinner</a></li>
             <li><a href="#">Drinks</a></li>
-            <li><a href="#">Others</a></li>
+            <li><a href="#">Other</a></li>
           </ul>
         </div>
       </div>
       <div class="menu-bottom">
-        <div class="menu">
-          <div class="menu-container">
-            <div class="plat">
-              <div id="img-plat">
-                <img
-                  src="./assets/img/dish-item-01.jpg"
-                  alt="italian-source-mushroom"
-                  width="75px"
-                />
-              </div>
-              <div id="plat-name">italian source mushroom</div>
-              <div id="plat-ingredients">Mushroom / Garlic / Veggies</div>
-              <div id="plat-price">$12</div>
+        <div class="menu-card">
+          <div class="menu-card-container">
+            <div id="plat-presentation">
+              <img
+                src="./assets/img/dish-item-01.jpg"
+                alt="photo Italian Source Mushroom"
+              />
+              <h5>Italian Source Mushroom</h5>
+              <p id="ingredients">Mushroom / Garlic / Veggies</p>
+              <p id="price">$12</p>
             </div>
-            <div class="plat">
-              <div id="img-plat">
-                <img
-                  src="./assets/img/dish-item-02.jpg"
-                  alt="fried-potatoes-with-garlic"
-                  width="75px"
-                />
-              </div>
-              <div id="plat-name">fries potatoes with garlic</div>
-              <div id="plat-ingredients">Potatoes / Olive Oil / Garlic</div>
-              <div id="plat-price">$22</div>
+            <div id="plat-presentation">
+              <img
+                src="./assets/img/dish-item-02.jpg"
+                alt="photo Fried Potatoes with Garlic"
+              />
+              <h5>Fried Potatoes with Garlic</h5>
+              <p id="ingredients">Potatoes / Olive Oil / Garlic</p>
+              <p id="price">$22</p>
             </div>
-            <div class="plat">
-              <div id="img-plat">
-                <img
-                  src="./assets/img/dish-item-03.jpg"
-                  alt="tenu-roast-source"
-                  width="75px"
-                />
-              </div>
-              <div id="plat-name">tenu roast source</div>
-              <div id="plat-ingredients">Tuna / Potatoes / Rice</div>
-              <div id="plat-price">$15</div>
+            <div id="plat-presentation">
+              <img
+                src="./assets/img/dish-item-03.jpg"
+                alt="photo Tenu Roast Source"
+              />
+              <h5>Tenu Roast Source</h5>
+              <p id="ingredients">Tuna / Potatoes / Rice</p>
+              <p id="price">$15</p>
             </div>
-            <div class="plat">
-              <div id="img-plat">
-                <img
-                  src="./assets/img/dish-item-04.jpg"
-                  alt="roast-pork"
-                  width="75px"
-                />
-              </div>
-              <div id="plat-name">roast pork (4 sticks)</div>
-              <div id="plat-ingredients">Pork / Veggies / Shoyu</div>
-              <div id="plat-price">$18</div>
+            <div id="plat-presentation">
+              <img
+                src="./assets/img/dish-item-04.jpg"
+                alt="photo Roast Pork (4 Sticks)"
+              />
+              <h5>Roast Pork (4 Sticks)</h5>
+              <p id="ingredients">Pork / Veggies / Shoyu</p>
+              <p id="price">$18</p>
             </div>
-            <div class="plat">
-              <div id="img-plat">
-                <img
-                  src="./assets/img/dish-item-05.jpg"
-                  alt="salted-fried-chicken"
-                  width="75px"
-                />
-              </div>
-              <div id="plat-name">salted fried chicken</div>
-              <div id="plat-ingredients">Chicken / Olive Oil / Salt</div>
-              <div id="plat-price">$20</div>
+            <div id="plat-presentation">
+              <img
+                src="./assets/img/dish-item-05.jpg"
+                alt="photo Salted Fried Chicken"
+              />
+              <h5>Salted Fried Chicken</h5>
+              <p id="ingredients">Chicken / Olive Oil / Salt</p>
+              <p id="price">$20</p>
             </div>
-            <div class="plat">
-              <div id="img-plat">
-                <img
-                  src="./assets/img/dish-item-06.jpg"
-                  alt="crab-with-curry-sources"
-                  width="75px"
-                />
-              </div>
-              <div id="plat-name">crab with curry sources</div>
-              <div id="plat-ingredients">Carb / Potatoes / Rice</div>
-              <div id="plat-price">$14</div>
+            <div id="plat-presentation">
+              <img
+                src="./assets/img/dish-item-06.jpg"
+                alt="photo Crab with Curry Sources"
+              />
+              <h5>Crab with Curry Sources</h5>
+              <p id="ingredients">Crab / Potatoes / Rice</p>
+              <p id="price">$14</p>
             </div>
-            <div class="plat">
-              <div id="img-plat">
-                <img
-                  src="./assets/img/dish-item-07.jpg"
-                  alt="imported-slamon-steak"
-                  width="75px"
-                />
-              </div>
-              <div id="plat-name">imported salmon steak</div>
-              <div id="plat-ingredients">Salmon / Veggies / Oil</div>
-              <div id="plat-price">$16</div>
+            <div id="plat-presentation">
+              <img
+                src="./assets/img/dish-item-07.jpg"
+                alt="photo Imported Salmon Steak"
+              />
+              <h5>Imported Salmon Steak</h5>
+              <p id="ingredients">Salmon / Veggies / Oil</p>
+              <p id="price">$16</p>
             </div>
-            <div class="plat">
-              <div id="img-plat">
-                <img
-                  src="./assets/img/dish-item-08.jpg"
-                  alt="baked-potato-pizza"
-                  width="75px"
-                />
-              </div>
-              <div id="plat-name">baked potato pizza</div>
-              <div id="plat-ingredients">Potato / Bread / Cheese</div>
-              <div id="plat-price">$25</div>
+            <div id="plat-presentation">
+              <img
+                src="./assets/img/dish-item-08.jpg"
+                alt="photo Baked Potato Pizza"
+              />
+              <h5>Baked Potato Pizza</h5>
+              <p id="ingredients">Potato / Bread / Cheese</p>
+              <p id="price">$25</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- ******** RESERVATIONS ******** -->
+    <section class="reservations">
+      <div class="reservation-container">
+        <div class="rc-left">
+          <div class="rc-left-container">
+            <h3>Time</h3>
+            <h4>open</h4>
+            <img src="./assets/img/ic-plate.png" alt="logo couverts" />
+            <p id="days">Monday - Friday</p>
+            <p id="days-d">
+              7AM - 11AM (Breakfast) <br />
+              11AM - 10PM (Lunch/Dinner)
+            </p>
+            <p id="days">Saturday / Sunday</p>
+            <p id="days-d">
+              8AM - 1PM (Brunch) <br />
+              1PM - 90PM (Lunch/Dinner)
+            </p>
+            <p id="days">+15 890 979 25 52</p>
+          </div>
+        </div>
+        <div class="rc-right">
+          <div class="rc-right-container">
+            <h3>Reservation</h3>
+            <h4>Online Booking</h4>
+            <img src="./assets/img/ic-plate.png" alt="logo couverts" />
+            <div class="form">
+              <div class="people">
+                <select name="people" id="people-select">
+                  <option value="">People</option>
+                  <option value="one">1</option>
+                  <option value="two">2</option>
+                  <option value="three">3</option>
+                  <option value="four">4</option>
+                  <option value="five">5</option>
+                  <option value="six">6</option>
+                </select>
+              </div>
+              <div class="date">
+                <input type="date" name="date" id="date-select" />
+              </div>
+              <div class="hour">
+                <input type="time" name="time" id="time-select" />
+              </div>
+              <div class="name">
+                <input type="text" name="name" id="name-input" value="Name" />
+              </div>
+              <div class="phone">
+                <input type="tel" name="phone" id="phone-input" value="Phone" />
+              </div>
+              <div class="mail">
+                <input type="text" name="mail" id="mail-input" value="Email" />
+              </div>
+            </div>
+            <input type="submit" id="button" value="Book now" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ******** EVENT ******** -->
+    <section class="event">
+      <div class="event-container">
+        <h3>Upcoming</h3>
+        <h4>Our event</h4>
+        <img src="./assets/img/ic-plate.png" alt="logo couverts" />
+        <div class="event-grid">
+          <div class="eg-left-top" id="event-card">
+            <div class="event-card-left">
+              <div id="event-date">
+                <div>
+                  <div id="event-date-day">08</div>
+                  <div id="event-date-month">July</div>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-right">
+              <div>
+                <div id="event-title">Night Inspirescu Party</div>
+                <div id="event-legend">
+                  <i class="fa-solid fa-location-dot"></i>Restaurant Resto<i
+                    class="fa-regular fa-clock"
+                  ></i
+                  >10:00pm - 6:00am
+                </div>
+                <a href="#" id="buy-it">Buy Tickets</a>
+              </div>
+            </div>
+          </div>
+          <div class="eg-left-bottom" id="event-card">
+            <div class="event-card-left">
+              <div id="event-date">
+                <div>
+                  <div id="event-date-day">08</div>
+                  <div id="event-date-month">July</div>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-right">
+              <div>
+                <div id="event-title">DJ RobagRuhme</div>
+                <div id="event-legend">
+                  <i class="fa-solid fa-location-dot"></i>Restaurant Resto<i
+                    class="fa-regular fa-clock"
+                  ></i
+                  >10:00pm - 6:00am
+                </div>
+                <a href="#" id="buy-it">Buy Tickets</a>
+              </div>
+            </div>
+          </div>
+          <div class="eg-right">
+            <div class="eg-right-container">
+              <div id="event-date">
+                <div>
+                  <div id="event-date-day">08</div>
+                  <div id="event-date-month">July</div>
+                </div>
+              </div>
+              <div id="event-title">Thousands celebrities at Johnnie Night</div>
+              <div id="event-legend">
+                <i class="fa-solid fa-location-dot"></i>Restaurant Resto<i
+                  class="fa-regular fa-clock"
+                ></i
+                >10:00pm - 6:00am
+              </div>
+              <a href="#" id="buy-it">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ******** COMMENTAIRES ******** -->
+    <section class="commentaires">
+      <div class="commentaire-container">
+        <img src="./assets/img/avatar-02.jpg" alt="avatar" />
+        <p id="comment">
+          <i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Voluptates cum atque natus perspiciatis
+          adipisci at nemo quos quisquam, facilis et officia dolores voluptatem
+          maiores vel saepe praesentium voluptate dicta perferendis eius est!
+          Omnis veritatis consequuntur deleniti ducimus velit beatae possimus!
+          <i class="fa-solid fa-quote-right"></i>
+        </p>
+        <p id="name-chef">Russel Stephens</p>
+        <p id="subtext">CEO - HeadPassion</p>
+      </div>
+    </section>
+    <!-- ******** MAP ******** -->
+    <section class="map"></section>
+    <!-- ******** FOOTER ******** -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Resto</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sunt
+            earum impedit iste vitae at commodi architecto repellendus eveniet
+            amet suscipit reiciendis consequatur, quidem explicabo.
+          </p>
+        </div>
+        <div class="footer-right">
+          <div class="newsletter">
+            <h6>Newsletter</h6>
+            <input type="text" value="Your email address" />
+          </div>
+          <div class="network">
+            <h6>follow us:</h6>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

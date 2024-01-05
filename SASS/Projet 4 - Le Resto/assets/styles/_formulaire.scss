@@ -1,0 +1,127 @@
+.reservations {
+  min-height: 350px;
+  background: $anthracite2;
+  .reservation-container {
+    width: 70%;
+    min-height: 425px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 1000px) {
+      display: block;
+    }
+    text-align: center;
+    .rc-left {
+      height: 100%;
+      background: black;
+      padding: 15px;
+      .rc-left-container {
+        height: 100%;
+        border: 1px dotted whitesmoke;
+        padding: 20px;
+        h4 {
+          color: $white1;
+          margin: -10px 0 20px;
+        }
+        img {
+          padding-bottom: 25px;
+        }
+        #days {
+          font-family: $medium;
+          color: $dore1;
+          text-transform: uppercase;
+          padding-bottom: 10px;
+        }
+        #days-d {
+          font-family: $medium;
+          color: $white1;
+          font-size: 0.7rem;
+          padding-bottom: 20px;
+        }
+      }
+    }
+    .rc-right {
+      min-height: 425px;
+      background: whitesmoke;
+      padding: 30px 0;
+      @media screen and (max-width: 1130px) {
+        padding: 43px 0;
+      }
+      @media screen and (max-width: 1085px) {
+        padding: 52px 0;
+      }
+      @media screen and (max-width: 1070px) {
+        padding: 60px 0;
+      }
+      @media screen and (max-width: 1020px) {
+        padding: 85px 0;
+      }
+      @media screen and (max-width: 860px) {
+        padding: 0;
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .rc-right-container {
+        padding: 20px;
+        h4 {
+          margin: -10px 0 20px;
+        }
+        img {
+          padding-bottom: 25px;
+        }
+        .form {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 15px;
+          padding-bottom: 25px;
+          @media screen and (max-width: 860px) {
+            display: block;
+            padding-bottom: 0px;
+          }
+
+          #people-select,
+          #date-select,
+          #time-select,
+          #name-input,
+          #phone-input,
+          #mail-input {
+            width: 100%;
+            background: none;
+            border: none;
+            outline: none;
+            padding: 5px;
+          }
+          .people,
+          .date,
+          .hour,
+          .name,
+          .phone,
+          .mail {
+            border-bottom: 1px solid $grey1;
+            @media screen and (max-width: 860px) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+        #button {
+          text-transform: uppercase;
+          color: $white1;
+          font-family: $medium;
+          letter-spacing: 3px;
+          background: black;
+          padding: 5px 25px;
+          border-radius: 45px;
+          margin: 10px 0 36px;
+        }
+      }
+    }
+  }
+}

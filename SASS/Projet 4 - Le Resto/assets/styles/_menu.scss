@@ -1,0 +1,152 @@
+.menu-top {
+  background: $anthracite1;
+  text-align: center;
+  .menu-top-container {
+    h3 {
+      padding: 40px 0 20px;
+    }
+    img {
+      padding-bottom: 20px;
+    }
+    ul {
+      display: flex;
+      width: 50%;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px 0 150px;
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
+      li {
+        border-bottom: 1px solid $grey1;
+        padding-bottom: 10px;
+        color: $white1;
+        a {
+          color: $white1;
+          font-family: $light;
+          font-size: 1rem;
+          text-decoration: none;
+          @media screen and (max-width: 425px) {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+}
+.menu-bottom {
+  background: url(../img/bg-menu-01.jpg) center/cover;
+  min-height: 450px;
+  @media screen and (max-width: 1024px) {
+    min-height: 350px;
+  }
+  @media screen and (max-width: 600px) {
+    min-height: 800px;
+  }
+  @media screen and (max-width: 510px) {
+    min-height: 700px;
+  }
+  @media screen and (max-width: 425px) {
+    min-height: 600px;
+  }
+  @media screen and (max-width: 375px) {
+    min-height: 500px;
+  }
+  @media screen and (max-width: 320px) {
+    min-height: 400px;
+  }
+
+  position: relative;
+  .menu-card {
+    background: $white1;
+    width: 60%;
+    @media screen and (max-width: 768px) {
+      width: 80%;
+    }
+
+    padding: 40px 20px;
+    @media screen and (max-width: 320px) {
+      padding: 20px;
+    }
+
+    border-top: 3px solid $dore1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -100px;
+    .menu-card-container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 25% 25% 25% 25%;
+      gap: 10px;
+      @media screen and (max-width: 600px) {
+        display: block;
+      }
+
+      #plat-presentation {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 20% 70% 10%;
+        grid-template-rows: 33% 67%;
+        grid-template-areas:
+          "image title price"
+          "image ingre price";
+        border-bottom: 1px solid rgb(200, 200, 200);
+        @media screen and (max-width: 600px) {
+          margin-bottom: 10px;
+        }
+
+        img {
+          grid-area: image;
+          border-radius: 200px;
+          width: 95%;
+        }
+        h5 {
+          grid-area: title;
+          text-transform: uppercase;
+          font-family: $medium;
+        }
+        #ingredients {
+          grid-area: ingre;
+          font-size: 1rem;
+        }
+        #price {
+          grid-area: price;
+          font-family: $light;
+          font-size: 1rem;
+          font-weight: bold;
+          color: $dore1;
+        }
+        @media screen and (max-width: 1024px) {
+          h5,
+          #ingredients,
+          #price {
+            font-size: 0.8rem;
+          }
+        }
+        @media screen and (max-width: 600px) {
+          h5,
+          #ingredients,
+          #price {
+            font-size: 1rem;
+          }
+        }
+        @media screen and (max-width: 510px) {
+          h5,
+          #ingredients,
+          #price {
+            font-size: 0.8rem;
+          }
+        }
+        @media screen and (max-width: 320px) {
+          h5,
+          #ingredients,
+          #price {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}

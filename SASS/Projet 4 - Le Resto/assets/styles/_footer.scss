@@ -1,0 +1,88 @@
+footer {
+  background: url(../img/bg-footer.jpg) center/cover;
+  min-height: 250px;
+  color: $grey1;
+  @media screen and (max-width: 650px) {
+    background: $anthracite2;
+  }
+
+  .footer-container {
+    @media screen and (max-width: 650px) {
+      width: 100%;
+    }
+
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: start;
+    .footer-left {
+      @media screen and (max-width: 650px) {
+        display: none;
+      }
+      h3 {
+        font-size: 2.5rem;
+        padding-bottom: 10px;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 2em;
+        padding-right: 40px;
+      }
+    }
+    .footer-right {
+      padding-left: 40px;
+      @media screen and (max-width: 650px) {
+        width: 100%;
+      }
+
+      h6 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: $white1;
+        padding-bottom: 10px;
+        @media screen and (max-width: 375px) {
+          font-size: 0.8rem;
+        }
+      }
+      .newsletter {
+        padding-bottom: 40px;
+        input[type="text"] {
+          background: none;
+          padding: 10px 20px;
+          outline: none;
+          color: $grey1;
+          border: 1px solid $grey1;
+          width: 250px;
+        }
+      }
+      .network {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        @media screen and (max-width: 650px) {
+          width: 320px;
+        }
+
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          li {
+            @media screen and (max-width: 375px) {
+              font-size: 0.7rem;
+            }
+
+            font-size: 1rem;
+            padding: 0 20px 10px;
+            a {
+              color: $grey1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

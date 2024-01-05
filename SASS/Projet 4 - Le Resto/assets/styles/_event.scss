@@ -1,0 +1,135 @@
+.event {
+  background: $anthracite2;
+  padding: 30px 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  .event-container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    h3 {
+      font-weight: normal;
+    }
+    h4 {
+      color: $white1;
+      margin: -8px 0 20px;
+      font-size: 1.5rem;
+    }
+    img {
+      padding-bottom: 20px;
+    }
+    .event-grid {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: 60% 40%;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "grid1 grid3"
+        "grid2 grid3";
+      gap: 20px;
+      #event-date {
+        color: $white1;
+        height: 60px;
+        width: 60px;
+        background: $anthracite2;
+        padding: 15px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #event-date-day {
+          font-size: 1.5rem;
+        }
+        #event-date-month {
+          margin: -3px 0;
+        }
+      }
+      #event-title {
+        font-size: 1.2rem;
+        font-family: $light;
+        text-align: start;
+        padding: 30px 0 15px 10px;
+      }
+      #event-legend {
+        font-size: 0.9rem;
+        color: rgb(200, 200, 200);
+        text-align: start;
+        padding-bottom: 15px;
+        i {
+          padding: 0 5px 0 10px;
+        }
+      }
+      #buy-it {
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
+        padding: 10px 0 25px 10px;
+        text-align: left;
+        margin-bottom: 25px;
+      }
+      .eg-left-top {
+        grid-area: grid1;
+        .event-card-left {
+          background: url(../img/event-01.jpg) center/cover;
+        }
+      }
+      .eg-left-bottom {
+        grid-area: grid2;
+        .event-card-left {
+          background: url(../img/event-02.jpg) center/cover;
+        }
+      }
+      .eg-right {
+        grid-area: grid3;
+        background: url(../img/event-03.jpg) center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .eg-right-container {
+          height: 100%;
+          background: $white1;
+          margin: 25px;
+          padding: 0 20px;
+          text-align: center;
+          #event-date {
+            margin: 0 auto;
+          }
+          #event-title {
+            text-align: center;
+          }
+          #event-legend {
+            text-align: center;
+            padding: 0 0;
+          }
+          #buy-it {
+            text-align: center;
+            padding: 95px 0 40px 10px;
+          }
+        }
+      }
+      #event-card {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        .event-card-left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .event-card-right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $white1;
+        }
+      }
+    }
+  }
+}
