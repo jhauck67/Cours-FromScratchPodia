@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Matrix";
+  src: url(./matrix.otf);
+}
+
+* {
+  text-align: center;
+  font-family: Matrix, sans-serif;
+  font-size: 1.2rem;
+  outline: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: url(./bg2.jpg) center/cover;
+}
+.app {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(4, 29, 51) 0%,
+    rgb(4, 87, 147) 100%
+  );
+  margin: 0 10px;
+  padding: 24px 10px 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 3px 4px 10px 0px rgba(166, 223, 250, 0.752);
+}
+#password-output {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  width: 100%;
+}
+.range-container {
+  margin: 20px 0;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 160px;
+  background-image: linear-gradient(120deg, #47b6f8 0%, #a6e0fa 100%);
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgba(166, 224, 250, 0.65) 0%,
+    rgba(4, 29, 51, 0.95) 100%
+  );
+  background-blend-mode: multiply, multiply;
+  cursor: pointer;
+  transform: translateY(-11px);
+  transition: 0.15s ease;
+  cursor: grab;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.2) translateY(-9px);
+}
+#display-password-length {
+  width: 30px;
+  color: whitesmoke;
+  background: transparent;
+  border: none;
+}
+.checkbox-container {
+  margin: 36px 0 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + label {
+  transform: scale(1.3);
+  filter: brightness(150%);
+}
+label {
+  user-select: none;
+  background-image: linear-gradient(to top, #0683cf 0%, #a6e0fa 100%);
+  height: 60px;
+  width: 60px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(4, 29, 51, 0.486);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+button {
+  margin: 14px 0 20px;
+  background-image: linear-gradient(120deg, #47b6f8 0%, #a6e0fa 100%);
+  padding: 10px 20px;
+  border: 2px solid #a6e0fa;
+  border-bottom: 3px solid #47b6f8;
+  border-right: 3px solid #47b6f8;
+  transition: 0.2s;
+  cursor: pointer;
+}
+button:hover {
+  border: 2px solid #47b6f8;
+  border-bottom: 3px solid #a6e0fa;
+  border-right: 3px solid #a6e0fa;
+  box-shadow: 0 5px 10px rgba(4, 29, 51, 0.32);
+  transform: translateX(3px);
+}
+button:active {
+  transform: scale(1.05);
+}
